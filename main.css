@@ -1,0 +1,144 @@
+            body{
+                margin:0px;
+                overflow-y: hidden;
+            }
+
+            #map { height: 800px;
+                 width:100%;
+                    position:absolute; 
+                 
+                  z-index: 0;
+            }
+            .head{
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                background: rgba(240, 249, 255, 0.8);
+                box-shadow: 0px 0px 10px 0px  #888888;
+                z-index: 1;
+                
+            }
+            #logo{
+                height: 25px;
+                width:9vw;
+                padding-top:10px;
+                padding-left: 10%;
+                z-index: 1;
+            }
+           
+            .headline{
+                position: absolute;
+                margin-top:100px;
+                margin-left:50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;  
+            }
+            #dest{
+                color: rgb(169, 195, 245);
+                background-color: rgba(255, 255, 255, 0.76);
+                padding: 5px;
+                z-index: 1;
+            }
+            .headline h1{
+                font-size: 30pt;
+                font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+            }
+            .search{
+                 position: absolute;
+                 background-color:rgb(211, 226, 255);
+                 margin-top:200px;
+                 margin-left:20%;
+                 padding-left: 2px;
+                 transform: translate(-50%, -50%);
+                 font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+                 z-index: 1;
+                 border:0px solid;  
+                 box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+            }
+            textarea:hover, 
+            input:hover, 
+            textarea:active, 
+            input:active, 
+             textarea:focus, 
+            input:focus,
+            button:focus,
+            button:active,
+            button:hover,
+            label:focus,
+            .btn:active,
+           .btn.active
+            {
+              outline:0px !important;
+               -webkit-appearance:none;
+            }
+            .search input[type=text] {
+                background-color:rgb(211, 226, 255);
+                color: #4d4c4c;
+                border: 0px;
+                height: 40px;
+                padding: 2px;
+                width: 300px;
+                border:0px;
+                
+               }
+            #searchicon{
+                padding-right: 20px;
+                padding-left:20px;
+                color: #3c44f8;
+            }
+            #drop{
+                 position: absolute;
+                 display: none;
+                 background-color:white;
+                 margin-left: -2px;
+                 width: 368px;
+                 z-index: 1;
+                 max-height: 330px;
+                 overflow-y: auto;
+                 overflow-x: hidden;
+                 box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.24);
+            } 
+            #drop.open{
+                 display:block !important;
+            }
+            #drop li{
+                list-style-type: none;
+                padding: 10px;
+                font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+            }
+            .addr{
+                font-size: 10px;
+            }
+            #drop li:hover{
+                background-color: rgb(127, 171, 255);
+                cursor: pointer;
+/*                opacity: 0.7;*/
+            }
+            #drop span{
+                position: relative;
+                padding-left: 40px;
+            }
+            .fabutton {
+                      background: none;
+                      padding: 0px;
+                      border: none;
+                      cursor: pointer;
+              }
+           .fa-search:before {
+            font-size: large;
+             padding: 20px;
+             color: #3c44f8;
+           }
+           ::-webkit-scrollbar {
+              width: 12px;
+           }
+ 
+          ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+               border-radius: 10px;
+            }
+ 
+            ::-webkit-scrollbar-thumb {
+              border-radius: 10px;
+              -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+             }

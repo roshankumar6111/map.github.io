@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+    <head>
+       <title>Map</title>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel ="stylesheet" href="main.css">
+          <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+           <script src="searchbox.js"></script>
+     </head>
+     <body>
+      <div class="search" >
+          <input id="address" type="text"  placeholder="Select your pin code" autocomplete="off">
+          <button class="fabutton" id="submit" type="button" value="Geocode"><i type="submit" id="submit" class="fa fa-search" id="searchicon"     aria-hidden="true"></i></button>
+          <div id="drop" ></div>  
+       </div>
+       <div class="head"> <img id="logo" src="Logo.png" alt="Flowers in Chania"></div>
+       <div class="headline" ><h1>PICK YOUR <span id="dest">DESTINATION.</span></h1></div>     
+       <div id="map" style="z-index:-10px"></div>
+       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvdY7E6YdlLt3ts1XOSoG_1lA9HAsXmxM&callback=initMap"> </script>
+    </body>
+    <script src="map.js"></script>
+</html>
